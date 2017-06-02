@@ -18,7 +18,7 @@
 # icelatentperiod=86400.,
 
 ## input files
- icefracfile = '/scratch/darren/1min_forcing/icef.2007-2010.1min.kronos.bin',
+ icefracfile = '.../icef.2007-2010.1min.kronos.bin',
 # icelatentfile = '/ptmp/benesh/10km_forcing/s2001_iceLHF_0.25m_Lake_Superior_r4.bin',
 
  lakeice_iprec         = 32,
