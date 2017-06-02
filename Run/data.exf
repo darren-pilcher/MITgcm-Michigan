@@ -66,12 +66,12 @@
 #
 #
 ## input files
- lwdownfile = '/scratch/darren/1min_forcing/xy.longwave.narr.new.2007-2010.1min.bin',
- swdownfile = '/scratch/darren/1min_forcing/xy.shortwave.narr.new.2007-2010.1min.bin',
- uwindfile  = '/scratch/darren/1min_forcing/xy.uwind.narr.new.2007-2010.1min.bin',
- vwindfile  = '/scratch/darren/1min_forcing/xy.vwind.narr.new.2007-2010.1min.bin',
- atempfile  = '/scratch/darren/1min_forcing/xy.temp.10m.narr.new.2007-2010.1min.bin',
- aqhfile    = '/scratch/darren/1min_forcing/xy.shumid.narr.new.2007-2010.1min.bin',
+ lwdownfile = '.../xy.longwave.narr.new.2007-2010.1min.bin',
+ swdownfile = '.../xy.shortwave.narr.new.2007-2010.1min.bin',
+ uwindfile  = '.../xy.uwind.narr.new.2007-2010.1min.bin',
+ vwindfile  = '.../xy.vwind.narr.new.2007-2010.1min.bin',
+ atempfile  = '.../xy.temp.10m.narr.new.2007-2010.1min.bin',
+ aqhfile    = '.../xy.shumid.narr.new.2007-2010.1min.bin',
 
  exf_iprec         = 32,
  exf_yftype        = 'RS',
