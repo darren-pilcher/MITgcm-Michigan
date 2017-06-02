@@ -41,12 +41,12 @@
  quaggaperiod=86400.,
 
 ## input files
- ficefile   ='/scratch/darren/1min_forcing/icef.2007-2010.1min.kronos.bin',
+ ficefile   ='.../icef.2007-2010.1min.kronos.bin',
 # featmosfile='/ptmp/benesh/10km_forcing/s2006_artificial0_Lake_Superior_r4.bin',
- wspeedfile ='/scratch/darren/1min_forcing/wdsp.narr.new.2007-2010.1min.bin',
- sur_parfile='/scratch/darren/1min_forcing/xy.shortwave.narr.new.24hours.2007-2010.1min.bin',
- atmospfile ='/scratch/darren/1min_forcing/xy.pressure.narr.new.2007-2010.1min.bin',
- quaggafile ='/scratch/darren/1min_forcing/quagga.psec.pop.2007-2010.bin',
+ wspeedfile ='.../wdsp.narr.new.2007-2010.1min.bin',
+ sur_parfile='.../xy.shortwave.narr.new.24hours.2007-2010.1min.bin',
+ atmospfile ='.../xy.pressure.narr.new.2007-2010.1min.bin',
+ quaggafile ='.../quagga.psec.pop.2007-2010.bin',
  
  npzdcar_iprec         = 32,
  npzdcar_yftype        = 'RS',
