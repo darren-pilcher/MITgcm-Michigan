@@ -1,0 +1,23 @@
+ &GCHEM_PARM01
+#  iceFile='10km_forcing/s2006_icef_Lake_Superior_r4.bin',
+  iceFile=,
+  windFile=,
+#  ironFile=,
+  AtmospFile=,
+# Filename1='par_ocmip.bin_mth-2d.bin',
+#
+#
+# gchem_int1 = 2 to read in Ankur's atmospheric co2 file
+# gchem_int2 is number of months in run + 2 (need mid- month before and after months run)
+# gchem_int3 is timestep when file values are started to be read
+# gchem_int4 is number of timesteps in a month (timesteps between co2 values in file)
+  nsubtime=1,  
+  gchem_rl1=385.0d-6,
+  gchem_int1=1.,
+  gchem_int2=3, 
+#1490 for 1979-2006 (1979 3 times first)
+#  gchem_int2=674,
+#for 1993-2006
+  gchem_int3=0,
+  gchem_int4=3287,
+ &

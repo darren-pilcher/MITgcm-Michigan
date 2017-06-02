@@ -1,0 +1,53 @@
+# NPZDCAR parameters
+# *********************
+# External GCHEM & NPZDCAR Forcing Data
+# *********************
+ &NPZDCAR_NML
+####### ICEfraction
+## YYYY:MT:DD
+ ficestartdate1=20060101,
+## HH:MM:SS
+ ficestartdate2=000000,
+ ficeperiod=86400.,
+####### Fe from air
+## YYYY:MT:DD
+# featmosstartdate1=20000101,
+## HH:MM:SS
+# featmosstartdate2=000000,
+# featmosperiod=86400.,
+####### Wind speed
+## YYYY:MT:DD
+ wspeedstartdate1=20060101,
+## HH:MM:SS
+ wspeedstartdate2=000000,
+ wspeedperiod=10800.,
+####### PAR - 24 hour mean shortwave 
+## YYYY:MT:DD
+ sur_parstartdate1=20060101,
+## HH:MM:SS
+ sur_parstartdate2=000000,
+ sur_parperiod=86400.,
+####### Atmospheric pressure
+## YYYY:MT:DD
+ atmospstartdate1=20060101,
+## HH:MM:SS
+ atmospstartdate2=000000,
+ atmospperiod=10800.,
+###### Quagga Mussels 
+## YYYY:MT:DD 
+ quaggastartdate1=20060101,
+## HH:MM:SS 
+ quaggastartdate2=000000,
+ quaggaperiod=86400.,
+
+## input files
+ ficefile   ='/scratch/darren/1min_forcing/icef.2007-2010.1min.kronos.bin',
+# featmosfile='/ptmp/benesh/10km_forcing/s2006_artificial0_Lake_Superior_r4.bin',
+ wspeedfile ='/scratch/darren/1min_forcing/wdsp.narr.new.2007-2010.1min.bin',
+ sur_parfile='/scratch/darren/1min_forcing/xy.shortwave.narr.new.24hours.2007-2010.1min.bin',
+ atmospfile ='/scratch/darren/1min_forcing/xy.pressure.narr.new.2007-2010.1min.bin',
+ quaggafile ='/scratch/darren/1min_forcing/quagga.psec.pop.2007-2010.bin',
+ 
+ npzdcar_iprec         = 32,
+ npzdcar_yftype        = 'RS',
+ &

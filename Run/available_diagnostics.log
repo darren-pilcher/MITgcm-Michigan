@@ -1,0 +1,349 @@
+ Total Nb of available Diagnostics: ndiagt= 333
+------------------------------------------------------------------------
+ Num |<-Name->|Levs|<-parsing code->|<--  Units   -->|<- Tile (max=80c) 
+------------------------------------------------------------------------
+   1 |SDIAG1  |  1 |SM      L1      |user-defined    |User-Defined Surface   Diagnostic #1
+   2 |SDIAG2  |  1 |SM      L1      |user-defined    |User-Defined Surface   Diagnostic #2
+   3 |SDIAG3  |  1 |SM      L1      |user-defined    |User-Defined Surface   Diagnostic #3
+   4 |TNDyTr19| 29 |SM      ML      |mmol/m3/sec     |ALK tendency due to merid advect
+   5 |TNDxTr19| 29 |SM      ML      |mmol/m3/se      |alk tendency due to zonal advect
+   6 |TNDyTr13| 29 |SM      ML      |mmol/m3/sec     |DIC tendency due to merid advect
+   7 |TNDxTr13| 29 |SM      ML      |mmol/m3/s       |DIC tendency due to zonal advect
+   8 |TRxTr19 | 29 |SM      ML      |concen*m3/s     |zonal transport * ALK concentration
+   9 |TRyTr19 | 29 |SM      ML      |concen*m3/s     |merid transport * ALK concent
+  10 |TNRTr19 | 29 |SM      ML      |concentration/s |tendency of alk due to vert advect
+  11 |TRxTr13 | 29 |SM      ML      |mmol/m3 * m3/s  |zonal tranport * DIC concentration
+  12 |TRyTr13 | 29 |SM      ML      |mmol/m3 * m3/sec|merid transport * DIC concentration
+  13 |TNRTr13 | 29 |SM      ML      |mmol/m3/sec     |tendency due to vert advect
+  14 |REMDIC  | 29 |SM      ML      |mmol DIC /m3/s  |tendency due to remineralization
+  15 |BIODIC1 | 29 |SM      ML      |mmol DIC/m3/s   |tendency due to small phyto growth
+  16 |BIODIC2 | 29 |SM      ML      |mmol /m3 /s     |tendency due to diatom growth
+  17 |PICALK  | 29 |SM      ML      |mmol equiv/m3/s |tendency of alk due to pic tendency
+  18 |PHY1ALK | 29 |SM      ML      |mmol/m3/s       |tendency of alk due to phy1 uptake
+  19 |PHY2ALK | 29 |SM      ML      |mmol/m3/s       |tendency of alk due to phy2 uptake
+  20 |REMALK  | 29 |SM      ML      |mmol/m3/sec     |tendency of alk due to remin of DON
+  21 |SDIAGC  |  1 |SM  C022L1      |user-defined    |User-Defined Counted Surface Diagnostic
+  22 |VALK    |  1 |SM      L1      |mmol eq / m3 / s|Tendency of ALK due to air-sea
+  23 |ETAN    |  1 |SM      M1      |m               |Perturbation of Surface (pressure, height) (Pa,m)
+  24 |ETANSQ  |  1 |SM      M1      |m^2             |Square of Perturbation of Sfc position (r_unit^2)
+  25 |DETADT2 |  1 |SM      M1      |m^2/s^2         |Square of Eta (Surf.P,SSH) Tendency ((r_unit/s)^2)
+  26 |THETA   | 29 |SM      MR      |degC            |Potential Temperature (degC,K)
+  27 |SALT    | 29 |SM      MR      |psu             |Salt or Water Vapor mixing ratio
+  28 |RELHUM  | 29 |SM      MR      |percent         |Relative Humidity
+  29 |SALTanom| 29 |SM      MR      |psu             |Salt anomaly (=SALT-35; g/kg)
+  30 |UVEL    | 29 |UU   031MR      |m/s             |Zonal Component of Velocity (m/s)
+  31 |VVEL    | 29 |VV   030MR      |m/s             |Meridional Component of Velocity (m/s)
+  32 |WVEL    | 29 |WM      LR      |m/s             |Vertical Component of Velocity (r_units/s)
+  33 |THETASQ | 29 |SM      MR      |degC^2          |Square of Potential Temperature (K^2)
+  34 |SALTSQ  | 29 |SM      MR      |(psu)^2         |Square of Salt or Water Vapor mix rat (g^2/kg^2)
+  35 |SALTSQan| 29 |SM      MR      |(psu)^2         |Square of Salt anomaly (=(SALT-35)^2 (g^2/kg^2)
+  36 |UVELSQ  | 29 |UU   037MR      |m^2/s^2         |Square of Zonal Comp of Velocity (m^2/s^2)
+  37 |VVELSQ  | 29 |VV   036MR      |m^2/s^2         |Square of Meridional Comp of Velocity (m^2/s^2)
+  38 |WVELSQ  | 29 |WM      LR      |m^2/s^2         |Square of Vertical Comp of Velocity (m^2/s^2)
+  39 |UV_VEL_C| 29 |UM   039MR      |m^2/s^2         |Product of horizontal Comp of velocity (cell center)
+  40 |UV_VEL_Z| 29 |UZ   040MR      |m^2/s^2         |Meridional Transport of Zonal Momentum (m^2/s^2)
+  41 |WU_VEL  | 29 |WU      LR      |m.m/s^2         |Vertical Transport of Zonal Momentum (m^2/s^2)
+  42 |WV_VEL  | 29 |WV      LR      |m.m/s^2         |Vertical Transport of Meridional Momentum (m^2/s^2)
+  43 |UVELMASS| 29 |UU   044MR      |m/s             |Zonal Mass-Weighted Comp of Velocity (m/s)
+  44 |VVELMASS| 29 |VV   043MR      |m/s             |Meridional Mass-Weighted Comp of Velocity (m/s)
+  45 |WVELMASS| 29 |WM      LR      |m/s             |Vertical Mass-Weighted Comp of Velocity (m/s)
+  46 |UTHMASS | 29 |UU   047MR      |degC.m/s        |Zonal Mass-Weight Transp of Pot Temp (K.m/s)
+  47 |VTHMASS | 29 |VV   046MR      |degC.m/s        |Meridional Mass-Weight Transp of Pot Temp (K.m/s)
+  48 |WTHMASS | 29 |WM      LR      |degC.m/s        |Vertical Mass-Weight Transp of Pot Temp (K.m/s)
+  49 |USLTMASS| 29 |UU   050MR      |psu.m/s         |Zonal Mass-Weight Transp of Salt
+  50 |VSLTMASS| 29 |VV   049MR      |psu.m/s         |Meridional Mass-Weight Transp of Salt
+  51 |WSLTMASS| 29 |WM      LR      |psu.m/s         |Vertical Mass-Weight Transp of Salt
+  52 |UVELTH  | 29 |UU   053MR      |degC.m/s        |Zonal Transp of Pot Temp (K.m/s)
+  53 |VVELTH  | 29 |VV   052MR      |degC.m/s        |Meridional Transp of Pot Temp (K.m/s)
+  54 |WVELTH  | 29 |WM      LR      |degC.m/s        |Vertical Transp of Pot Temp (K.m/s)
+  55 |UVELSLT | 29 |UU   056MR      |psu.m/s         |Zonal Transp of Salt
+  56 |VVELSLT | 29 |VV   055MR      |psu.m/s         |Meridional Transp of Salt
+  57 |WVELSLT | 29 |WM      LR      |psu.m/s         |Vertical Transp of Salt
+  58 |UVELPHI | 29 |UU   059MR      |m^3/s^3         |Zonal Transp of Geopotential Height (m2/s2.m/s)
+  59 |VVELPHI | 29 |VV   058MR      |m^3/s^3         |Meridional Transp of Geopotential Height (m2/s2.m/s)
+  60 |RHOAnoma| 29 |SM      MR      |kg/m^3          |Density Anomaly (=Rho-rhoConst)
+  61 |RHOANOSQ| 29 |SM      MR      |kg^2/m^6        |Square of Density Anomaly (=(Rho-rhoConst)^2)
+  62 |URHOMASS| 29 |UU   063MR      |kg/m^2/s        |Zonal Transport of Density
+  63 |VRHOMASS| 29 |VV   062MR      |kg/m^2/s        |Meridional Transport of Density
+  64 |WRHOMASS| 29 |WM      LR      |kg/m^2/s        |Vertical Transport of Potential Density
+  65 |PHIHYD  | 29 |SM      MR      |m^2/s^2         |Hydrostatic (ocean) pressure / (atmos) geo-Potential
+  66 |PHIHYDSQ| 29 |SM      MR      |m^4/s^4         |Square of Hyd. (ocean) press / (atmos) geoPotential
+  67 |PHIBOT  |  1 |SM      M1      |m^2/s^2         |ocean bottom pressure / top. atmos geo-Potential
+  68 |PHIBOTSQ|  1 |SM      M1      |m^4/s^4         |Square of ocean bottom pressure / top. geo-Potential
+  69 |DRHODR  | 29 |SM      LR      |kg/m^4          |Stratification: d.Sigma/dr (kg/m3/r_unit)
+  70 |CONVADJ | 29 |SM      LR      |fraction        |Convective Adjustment Index [0-1]
+  71 |TAUX    |  1 |SU      U1      |N/m^2           |zonal surface wind stress, >0 increases uVel
+  72 |TAUY    |  1 |SV      U1      |N/m^2           |meridional surf. wind stress, >0 increases vVel
+  73 |TFLUX   |  1 |SM      U1      |W/m^2           |net surface heat flux, >0 increases theta
+  74 |TRELAX  |  1 |SM      U1      |W/m^2           |surface temperature relaxation, >0 increases theta
+  75 |TICE    |  1 |SM      U1      |W/m^2           |heat from melt/freeze of sea-ice, >0 increases theta
+  76 |SFLUX   |  1 |SM      U1      |g/m^2/s         |net surface salt flux, >0 increases salt
+  77 |SRELAX  |  1 |SM      U1      |g/m^2/s         |surface salinity relaxation, >0 increases salt
+  78 |SWFLUX  |  1 |SM      U1      |W/m^2           |net upward SW radiation, >0 increases theta
+  79 |PRESSURE| 29 |SM      MR      |m               |Atmospheric Pressure (Pa)
+  80 |RSURF   |  1 |SM      M1      |m               |Surface (Pressure, Height) (Pa,m)
+  81 |TOTUTEND| 29 |UU   082MR      |m/s^2           |Tendency of Zonal Component of Velocity (m/s^2)
+  82 |TOTVTEND| 29 |VV   081MR      |m/s^2           |Tendency of Meridional Component of Velocity (m/s^2)
+  83 |TOTTTEND| 29 |SM      MR      |deg K/sec       |Tendency of Potential Temperature (degC,K)
+  84 |TOTSTEND| 29 |SM      MR      |kg/kg-sec       |Tendency of Salt or Water Vapor mixing ratio
+  85 |ADVr_TH | 29 |WM      LR      |degC.m^3/s      |Vertical   Advective Flux of Pot.Temperature
+  86 |ADVx_TH | 29 |UU   087MR      |degC.m^3/s      |Zonal      Advective Flux of Pot.Temperature
+  87 |ADVy_TH | 29 |VV   086MR      |degC.m^3/s      |Meridional Advective Flux of Pot.Temperature
+  88 |DFrE_TH | 29 |WM      LR      |degC.m^3/s      |Vertical Diffusive Flux of Pot.Temperature (Explicit part)
+  89 |DIFx_TH | 29 |UU   090MR      |degC.m^3/s      |Zonal      Diffusive Flux of Pot.Temperature
+  90 |DIFy_TH | 29 |VV   089MR      |degC.m^3/s      |Meridional Diffusive Flux of Pot.Temperature
+  91 |DFrI_TH | 29 |WM      LR      |degC.m^3/s      |Vertical Diffusive Flux of Pot.Temperature (Implicit part)
+  92 |ADVr_SLT| 29 |WM      LR      |psu.m^3/s       |Vertical   Advective Flux of Salinity
+  93 |ADVx_SLT| 29 |UU   094MR      |psu.m^3/s       |Zonal      Advective Flux of Salinity
+  94 |ADVy_SLT| 29 |VV   093MR      |psu.m^3/s       |Meridional Advective Flux of Salinity
+  95 |DFrE_SLT| 29 |WM      LR      |psu.m^3/s       |Vertical Diffusive Flux of Salinity    (Explicit part)
+  96 |DIFx_SLT| 29 |UU   097MR      |psu.m^3/s       |Zonal      Diffusive Flux of Salinity
+  97 |DIFy_SLT| 29 |VV   096MR      |psu.m^3/s       |Meridional Diffusive Flux of Salinity
+  98 |DFrI_SLT| 29 |WM      LR      |psu.m^3/s       |Vertical Diffusive Flux of Salinity    (Implicit part)
+  99 |VISCAHZ | 29 |SZ      MR      |m^2/s           |Harmonic Visc Coefficient (m2/s) (Zeta Pt)
+------------------------------------------------------------------------
+ Num |<-Name->|Levs|<-parsing code->|<--  Units   -->|<- Tile (max=80c) 
+------------------------------------------------------------------------
+ 100 |VISCA4Z | 29 |SZ      MR      |m^4/s           |Biharmonic Visc Coefficient (m4/s) (Zeta Pt)
+ 101 |VISCAHD | 29 |SM      MR      |m^2/s           |Harmonic Viscosity Coefficient (m2/s) (Div Pt)
+ 102 |VISCA4D | 29 |SM      MR      |m^4/s           |Biharmonic Viscosity Coefficient (m4/s) (Div Pt)
+ 103 |VAHZMAX | 29 |SZ      MR      |m^2/s           |CFL-MAX Harm Visc Coefficient (m2/s) (Zeta Pt)
+ 104 |VA4ZMAX | 29 |SZ      MR      |m^4/s           |CFL-MAX Biharm Visc Coefficient (m4/s) (Zeta Pt)
+ 105 |VAHDMAX | 29 |SM      MR      |m^2/s           |CFL-MAX Harm Visc Coefficient (m2/s) (Div Pt)
+ 106 |VA4DMAX | 29 |SM      MR      |m^4/s           |CFL-MAX Biharm Visc Coefficient (m4/s) (Div Pt)
+ 107 |VAHZMIN | 29 |SZ      MR      |m^2/s           |RE-MIN Harm Visc Coefficient (m2/s) (Zeta Pt)
+ 108 |VA4ZMIN | 29 |SZ      MR      |m^4/s           |RE-MIN Biharm Visc Coefficient (m4/s) (Zeta Pt)
+ 109 |VAHDMIN | 29 |SM      MR      |m^2/s           |RE-MIN Harm Visc Coefficient (m2/s) (Div Pt)
+ 110 |VA4DMIN | 29 |SM      MR      |m^4/s           |RE-MIN Biharm Visc Coefficient (m4/s) (Div Pt)
+ 111 |VAHZLTH | 29 |SZ      MR      |m^2/s           |Leith Harm Visc Coefficient (m2/s) (Zeta Pt)
+ 112 |VA4ZLTH | 29 |SZ      MR      |m^4/s           |Leith Biharm Visc Coefficient (m4/s) (Zeta Pt)
+ 113 |VAHDLTH | 29 |SM      MR      |m^2/s           |Leith Harm Visc Coefficient (m2/s) (Div Pt)
+ 114 |VA4DLTH | 29 |SM      MR      |m^4/s           |Leith Biharm Visc Coefficient (m4/s) (Div Pt)
+ 115 |VAHZLTHD| 29 |SZ      MR      |m^2/s           |LeithD Harm Visc Coefficient (m2/s) (Zeta Pt)
+ 116 |VA4ZLTHD| 29 |SZ      MR      |m^4/s           |LeithD Biharm Visc Coefficient (m4/s) (Zeta Pt)
+ 117 |VAHDLTHD| 29 |SM      MR      |m^2/s           |LeithD Harm Visc Coefficient (m2/s) (Div Pt)
+ 118 |VA4DLTHD| 29 |SM      MR      |m^4/s           |LeithD Biharm Visc Coefficient (m4/s) (Div Pt)
+ 119 |VAHZSMAG| 29 |SZ      MR      |m^2/s           |Smagorinsky Harm Visc Coefficient (m2/s) (Zeta Pt)
+ 120 |VA4ZSMAG| 29 |SZ      MR      |m^4/s           |Smagorinsky Biharm Visc Coeff. (m4/s) (Zeta Pt)
+ 121 |VAHDSMAG| 29 |SM      MR      |m^2/s           |Smagorinsky Harm Visc Coefficient (m2/s) (Div Pt)
+ 122 |VA4DSMAG| 29 |SM      MR      |m^4/s           |Smagorinsky Biharm Visc Coeff. (m4/s) (Div Pt)
+ 123 |momKE   | 29 |SM      MR      |m^2/s^2         |Kinetic Energy (in momentum Eq.)
+ 124 |momHDiv | 29 |SM      MR      |s^-1            |Horizontal Divergence (in momentum Eq.)
+ 125 |momVort3| 29 |SZ      MR      |s^-1            |3rd component (vertical) of Vorticity
+ 126 |Strain  | 29 |SZ      MR      |s^-1            |Horizontal Strain of Horizontal Velocities
+ 127 |Tension | 29 |SM      MR      |s^-1            |Horizontal Tension of Horizontal Velocities
+ 128 |UBotDrag| 29 |UU   129MR      |m/s^2           |U momentum tendency from Bottom Drag
+ 129 |VBotDrag| 29 |VV   128MR      |m/s^2           |V momentum tendency from Bottom Drag
+ 130 |USidDrag| 29 |UU   131MR      |m/s^2           |U momentum tendency from Side Drag
+ 131 |VSidDrag| 29 |VV   130MR      |m/s^2           |V momentum tendency from Side Drag
+ 132 |Um_Diss | 29 |UU   133MR      |m/s^2           |U momentum tendency from Dissipation
+ 133 |Vm_Diss | 29 |VV   132MR      |m/s^2           |V momentum tendency from Dissipation
+ 134 |Um_Advec| 29 |UU   135MR      |m/s^2           |U momentum tendency from Advection terms
+ 135 |Vm_Advec| 29 |VV   134MR      |m/s^2           |V momentum tendency from Advection terms
+ 136 |Um_Cori | 29 |UU   137MR      |m/s^2           |U momentum tendency from Coriolis term
+ 137 |Vm_Cori | 29 |VV   136MR      |m/s^2           |V momentum tendency from Coriolis term
+ 138 |Um_Ext  | 29 |UU   137MR      |m/s^2           |U momentum tendency from external forcing
+ 139 |Vm_Ext  | 29 |VV   138MR      |m/s^2           |V momentum tendency from external forcing
+ 140 |Um_AdvZ3| 29 |UU   141MR      |m/s^2           |U momentum tendency from Vorticity Advection
+ 141 |Vm_AdvZ3| 29 |VV   140MR      |m/s^2           |V momentum tendency from Vorticity Advection
+ 142 |Um_AdvRe| 29 |UU   143MR      |m/s^2           |U momentum tendency from vertical Advection (Explicit part)
+ 143 |Vm_AdvRe| 29 |VV   142MR      |m/s^2           |V momentum tendency from vertical Advection (Explicit part)
+ 144 |ADVx_Um | 29 |UM   145MR      |m^4/s^2         |Zonal      Advective Flux of U momentum
+ 145 |ADVy_Um | 29 |VZ   144MR      |m^4/s^2         |Meridional Advective Flux of U momentum
+ 146 |ADVrE_Um| 29 |WU      LR      |m^4/s^2         |Vertical   Advective Flux of U momentum (Explicit part)
+ 147 |ADVx_Vm | 29 |UZ   148MR      |m^4/s^2         |Zonal      Advective Flux of V momentum
+ 148 |ADVy_Vm | 29 |VM   147MR      |m^4/s^2         |Meridional Advective Flux of V momentum
+ 149 |ADVrE_Vm| 29 |WV      LR      |m^4/s^2         |Vertical   Advective Flux of V momentum (Explicit part)
+ 150 |VISCx_Um| 29 |UM   151MR      |m^4/s^2         |Zonal      Viscous Flux of U momentum
+ 151 |VISCy_Um| 29 |VZ   150MR      |m^4/s^2         |Meridional Viscous Flux of U momentum
+ 152 |VISrE_Um| 29 |WU      LR      |m^4/s^2         |Vertical   Viscous Flux of U momentum (Explicit part)
+ 153 |VISrI_Um| 29 |WU      LR      |m^4/s^2         |Vertical   Viscous Flux of U momentum (Implicit part)
+ 154 |VISCx_Vm| 29 |UZ   155MR      |m^4/s^2         |Zonal      Viscous Flux of V momentum
+ 155 |VISCy_Vm| 29 |VM   154MR      |m^4/s^2         |Meridional Viscous Flux of V momentum
+ 156 |VISrE_Vm| 29 |WV      LR      |m^4/s^2         |Vertical   Viscous Flux of V momentum (Explicit part)
+ 157 |VISrI_Vm| 29 |WV      LR      |m^4/s^2         |Vertical   Viscous Flux of V momentum (Implicit part)
+ 158 |EXFhs   |  1 |SM      U1      |W/m^2           |Sensible heat flux into ocean, >0 increases theta
+ 159 |EXFhl   |  1 |SM      U1      |W/m^2           |Latent heat flux into ocean, >0 increases theta
+ 160 |EXFlwnet|  1 |SM      U1      |W/m^2           |Net upward longwave radiation, >0 decreases theta
+ 161 |EXFswnet|  1 |SM      U1      |W/m^2           |Net upward shortwave radiation, >0 decreases theta
+ 162 |EXFlwdn |  1 |SM      U1      |W/m^2           |Downward longwave radiation, >0 increases theta
+ 163 |EXFswdn |  1 |SM      U1      |W/m^2           |Downward shortwave radiation, >0 increases theta
+ 164 |EXFqnet |  1 |SM      U1      |W/m^2           |Net upward heat flux (turb+rad), >0 decreases theta
+ 165 |EXFtaux |  1 |SU      U1      |N/m^2           |zonal surface wind stress, >0 increases uVel
+ 166 |EXFtauy |  1 |SV      U1      |N/m^2           |meridional surface wind stress, >0 increases vVel
+ 167 |EXFuwind|  1 |SM      U1      |m/s             |zonal 10-m wind speed, >0 increases uVel
+ 168 |EXFvwind|  1 |SM      U1      |m/s             |meridional 10-m wind speed, >0 increases uVel
+ 169 |EXFatemp|  1 |SM      U1      |degK            |surface (2-m) air temperature
+ 170 |EXFaqh  |  1 |SM      U1      |kg/kg           |surface (2-m) specific humidity
+ 171 |EXFevap |  1 |SM      U1      |m/s             |evaporation, > 0 increases salinity
+ 172 |EXFpreci|  1 |SM      U1      |m/s             |evaporation, > 0 decreases salinity
+ 173 |EXFempmr|  1 |SM      U1      |m/s             |net upward freshwater flux, > 0 increases salinity
+ 174 |EXFpress|  1 |SM      U1      |N/m^2           |atmospheric pressure field
+ 175 |LAKEicef|  1 |SM      U1      |No-unit         |Ice fraction
+ 176 |ICElat  |  1 |SM      U1      |W/m2            |Ice latent heat
+ 177 |KPPviscA| 29 |SM P    UR      |m^2/s           |KPP vertical eddy viscosity coefficient
+ 178 |KPPdiffS| 29 |SM P    UR      |m^2/s           |Vertical diffusion coefficient for salt & tracers
+ 179 |KPPdiffT| 29 |SM P    UR      |m^2/s           |Vertical diffusion coefficient for heat
+ 180 |KPPghat | 29 |SM P    LR      |s/m^2           |Nonlocal transport coefficient
+ 181 |KPPhbl  |  1 |SM P     1      |m               |KPP boundary layer depth, bulk Ri criterion
+ 182 |KPPmld  |  1 |SM P     1      |m               |Mixed layer depth, dT=.8degC density criterion
+ 183 |KPPfrac |  1 |SM P     1      |                |Short-wave flux fraction penetrating mixing layer
+ 184 |TRAC01  | 29 |SM P    MR      |(kg/kg)         |Mass-Weighted po4
+ 185 |UTRAC01 | 29 |UU   186MR      |(kg/kg).m/s     |Zonal Mass-Weighted Transp of po4
+ 186 |VTRAC01 | 29 |VV   185MR      |(kg/kg).m/s     |Merid Mass-Weighted Transp of po4
+ 187 |WTRAC01 | 29 |WM      MR      |(kg/kg).m/s     |Vert  Mass-Weighted Transp of po4
+ 188 |ADVrTr01| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical   Advective Flux of po4
+ 189 |ADVxTr01| 29 |UU   190MR      |(kg/kg).m^3/s   |Zonal      Advective Flux of po4
+ 190 |ADVyTr01| 29 |VV   189MR      |(kg/kg).m^3/s   |Meridional Advective Flux of po4
+ 191 |DFrETr01| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of po4 (Explicit part)
+ 192 |DIFxTr01| 29 |UU   193MR      |(kg/kg).m^3/s   |Zonal      Diffusive Flux of po4
+ 193 |DIFyTr01| 29 |VV   192MR      |(kg/kg).m^3/s   |Meridional Diffusive Flux of po4
+ 194 |DFrITr01| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of po4 (Implicit part)
+ 195 |TRAC02  | 29 |SM P    MR      |(kg/kg)         |Mass-Weighted phy1
+ 196 |UTRAC02 | 29 |UU   197MR      |(kg/kg).m/s     |Zonal Mass-Weighted Transp of phy1
+ 197 |VTRAC02 | 29 |VV   196MR      |(kg/kg).m/s     |Merid Mass-Weighted Transp of phy1
+ 198 |WTRAC02 | 29 |WM      MR      |(kg/kg).m/s     |Vert  Mass-Weighted Transp of phy1
+ 199 |ADVrTr02| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical   Advective Flux of phy1
+------------------------------------------------------------------------
+ Num |<-Name->|Levs|<-parsing code->|<--  Units   -->|<- Tile (max=80c) 
+------------------------------------------------------------------------
+ 200 |ADVxTr02| 29 |UU   201MR      |(kg/kg).m^3/s   |Zonal      Advective Flux of phy1
+ 201 |ADVyTr02| 29 |VV   200MR      |(kg/kg).m^3/s   |Meridional Advective Flux of phy1
+ 202 |DFrETr02| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of phy1 (Explicit part)
+ 203 |DIFxTr02| 29 |UU   204MR      |(kg/kg).m^3/s   |Zonal      Diffusive Flux of phy1
+ 204 |DIFyTr02| 29 |VV   203MR      |(kg/kg).m^3/s   |Meridional Diffusive Flux of phy1
+ 205 |DFrITr02| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of phy1 (Implicit part)
+ 206 |TRAC03  | 29 |SM P    MR      |(kg/kg)         |Mass-Weighted phy2
+ 207 |UTRAC03 | 29 |UU   208MR      |(kg/kg).m/s     |Zonal Mass-Weighted Transp of phy2
+ 208 |VTRAC03 | 29 |VV   207MR      |(kg/kg).m/s     |Merid Mass-Weighted Transp of phy2
+ 209 |WTRAC03 | 29 |WM      MR      |(kg/kg).m/s     |Vert  Mass-Weighted Transp of phy2
+ 210 |ADVrTr03| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical   Advective Flux of phy2
+ 211 |ADVxTr03| 29 |UU   212MR      |(kg/kg).m^3/s   |Zonal      Advective Flux of phy2
+ 212 |ADVyTr03| 29 |VV   211MR      |(kg/kg).m^3/s   |Meridional Advective Flux of phy2
+ 213 |DFrETr03| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of phy2 (Explicit part)
+ 214 |DIFxTr03| 29 |UU   215MR      |(kg/kg).m^3/s   |Zonal      Diffusive Flux of phy2
+ 215 |DIFyTr03| 29 |VV   214MR      |(kg/kg).m^3/s   |Meridional Diffusive Flux of phy2
+ 216 |DFrITr03| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of phy2 (Implicit part)
+ 217 |TRAC04  | 29 |SM P    MR      |(kg/kg)         |Mass-Weighted zoo
+ 218 |UTRAC04 | 29 |UU   219MR      |(kg/kg).m/s     |Zonal Mass-Weighted Transp of zoo
+ 219 |VTRAC04 | 29 |VV   218MR      |(kg/kg).m/s     |Merid Mass-Weighted Transp of zoo
+ 220 |WTRAC04 | 29 |WM      MR      |(kg/kg).m/s     |Vert  Mass-Weighted Transp of zoo
+ 221 |ADVrTr04| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical   Advective Flux of zoo
+ 222 |ADVxTr04| 29 |UU   223MR      |(kg/kg).m^3/s   |Zonal      Advective Flux of zoo
+ 223 |ADVyTr04| 29 |VV   222MR      |(kg/kg).m^3/s   |Meridional Advective Flux of zoo
+ 224 |DFrETr04| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of zoo (Explicit part)
+ 225 |DIFxTr04| 29 |UU   226MR      |(kg/kg).m^3/s   |Zonal      Diffusive Flux of zoo
+ 226 |DIFyTr04| 29 |VV   225MR      |(kg/kg).m^3/s   |Meridional Diffusive Flux of zoo
+ 227 |DFrITr04| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of zoo (Implicit part)
+ 228 |TRAC05  | 29 |SM P    MR      |(kg/kg)         |Mass-Weighted dop
+ 229 |UTRAC05 | 29 |UU   230MR      |(kg/kg).m/s     |Zonal Mass-Weighted Transp of dop
+ 230 |VTRAC05 | 29 |VV   229MR      |(kg/kg).m/s     |Merid Mass-Weighted Transp of dop
+ 231 |WTRAC05 | 29 |WM      MR      |(kg/kg).m/s     |Vert  Mass-Weighted Transp of dop
+ 232 |ADVrTr05| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical   Advective Flux of dop
+ 233 |ADVxTr05| 29 |UU   234MR      |(kg/kg).m^3/s   |Zonal      Advective Flux of dop
+ 234 |ADVyTr05| 29 |VV   233MR      |(kg/kg).m^3/s   |Meridional Advective Flux of dop
+ 235 |DFrETr05| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of dop (Explicit part)
+ 236 |DIFxTr05| 29 |UU   237MR      |(kg/kg).m^3/s   |Zonal      Diffusive Flux of dop
+ 237 |DIFyTr05| 29 |VV   236MR      |(kg/kg).m^3/s   |Meridional Diffusive Flux of dop
+ 238 |DFrITr05| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of dop (Implicit part)
+ 239 |TRAC06  | 29 |SM P    MR      |(kg/kg)         |Mass-Weighted pop
+ 240 |UTRAC06 | 29 |UU   241MR      |(kg/kg).m/s     |Zonal Mass-Weighted Transp of pop
+ 241 |VTRAC06 | 29 |VV   240MR      |(kg/kg).m/s     |Merid Mass-Weighted Transp of pop
+ 242 |WTRAC06 | 29 |WM      MR      |(kg/kg).m/s     |Vert  Mass-Weighted Transp of pop
+ 243 |ADVrTr06| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical   Advective Flux of pop
+ 244 |ADVxTr06| 29 |UU   245MR      |(kg/kg).m^3/s   |Zonal      Advective Flux of pop
+ 245 |ADVyTr06| 29 |VV   244MR      |(kg/kg).m^3/s   |Meridional Advective Flux of pop
+ 246 |DFrETr06| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of pop (Explicit part)
+ 247 |DIFxTr06| 29 |UU   248MR      |(kg/kg).m^3/s   |Zonal      Diffusive Flux of pop
+ 248 |DIFyTr06| 29 |VV   247MR      |(kg/kg).m^3/s   |Meridional Diffusive Flux of pop
+ 249 |DFrITr06| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of pop (Implicit part)
+ 250 |TRAC07  | 29 |SM P    MR      |(kg/kg)         |Mass-Weighted dic
+ 251 |UTRAC07 | 29 |UU   252MR      |(kg/kg).m/s     |Zonal Mass-Weighted Transp of dic
+ 252 |VTRAC07 | 29 |VV   251MR      |(kg/kg).m/s     |Merid Mass-Weighted Transp of dic
+ 253 |WTRAC07 | 29 |WM      MR      |(kg/kg).m/s     |Vert  Mass-Weighted Transp of dic
+ 254 |ADVrTr07| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical   Advective Flux of dic
+ 255 |ADVxTr07| 29 |UU   256MR      |(kg/kg).m^3/s   |Zonal      Advective Flux of dic
+ 256 |ADVyTr07| 29 |VV   255MR      |(kg/kg).m^3/s   |Meridional Advective Flux of dic
+ 257 |DFrETr07| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of dic (Explicit part)
+ 258 |DIFxTr07| 29 |UU   259MR      |(kg/kg).m^3/s   |Zonal      Diffusive Flux of dic
+ 259 |DIFyTr07| 29 |VV   258MR      |(kg/kg).m^3/s   |Meridional Diffusive Flux of dic
+ 260 |DFrITr07| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of dic (Implicit part)
+ 261 |TRAC08  | 29 |SM P    MR      |(kg/kg)         |Mass-Weighted zooc
+ 262 |UTRAC08 | 29 |UU   263MR      |(kg/kg).m/s     |Zonal Mass-Weighted Transp of zooc
+ 263 |VTRAC08 | 29 |VV   262MR      |(kg/kg).m/s     |Merid Mass-Weighted Transp of zooc
+ 264 |WTRAC08 | 29 |WM      MR      |(kg/kg).m/s     |Vert  Mass-Weighted Transp of zooc
+ 265 |ADVrTr08| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical   Advective Flux of zooc
+ 266 |ADVxTr08| 29 |UU   267MR      |(kg/kg).m^3/s   |Zonal      Advective Flux of zooc
+ 267 |ADVyTr08| 29 |VV   266MR      |(kg/kg).m^3/s   |Meridional Advective Flux of zooc
+ 268 |DFrETr08| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of zooc (Explicit part)
+ 269 |DIFxTr08| 29 |UU   270MR      |(kg/kg).m^3/s   |Zonal      Diffusive Flux of zooc
+ 270 |DIFyTr08| 29 |VV   269MR      |(kg/kg).m^3/s   |Meridional Diffusive Flux of zooc
+ 271 |DFrITr08| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of zooc (Implicit part)
+ 272 |TRAC09  | 29 |SM P    MR      |(kg/kg)         |Mass-Weighted doc
+ 273 |UTRAC09 | 29 |UU   274MR      |(kg/kg).m/s     |Zonal Mass-Weighted Transp of doc
+ 274 |VTRAC09 | 29 |VV   273MR      |(kg/kg).m/s     |Merid Mass-Weighted Transp of doc
+ 275 |WTRAC09 | 29 |WM      MR      |(kg/kg).m/s     |Vert  Mass-Weighted Transp of doc
+ 276 |ADVrTr09| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical   Advective Flux of doc
+ 277 |ADVxTr09| 29 |UU   278MR      |(kg/kg).m^3/s   |Zonal      Advective Flux of doc
+ 278 |ADVyTr09| 29 |VV   277MR      |(kg/kg).m^3/s   |Meridional Advective Flux of doc
+ 279 |DFrETr09| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of doc (Explicit part)
+ 280 |DIFxTr09| 29 |UU   281MR      |(kg/kg).m^3/s   |Zonal      Diffusive Flux of doc
+ 281 |DIFyTr09| 29 |VV   280MR      |(kg/kg).m^3/s   |Meridional Diffusive Flux of doc
+ 282 |DFrITr09| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of doc (Implicit part)
+ 283 |TRAC10  | 29 |SM P    MR      |(kg/kg)         |Mass-Weighted poc
+ 284 |UTRAC10 | 29 |UU   285MR      |(kg/kg).m/s     |Zonal Mass-Weighted Transp of poc
+ 285 |VTRAC10 | 29 |VV   284MR      |(kg/kg).m/s     |Merid Mass-Weighted Transp of poc
+ 286 |WTRAC10 | 29 |WM      MR      |(kg/kg).m/s     |Vert  Mass-Weighted Transp of poc
+ 287 |ADVrTr10| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical   Advective Flux of poc
+ 288 |ADVxTr10| 29 |UU   289MR      |(kg/kg).m^3/s   |Zonal      Advective Flux of poc
+ 289 |ADVyTr10| 29 |VV   288MR      |(kg/kg).m^3/s   |Meridional Advective Flux of poc
+ 290 |DFrETr10| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of poc (Explicit part)
+ 291 |DIFxTr10| 29 |UU   292MR      |(kg/kg).m^3/s   |Zonal      Diffusive Flux of poc
+ 292 |DIFyTr10| 29 |VV   291MR      |(kg/kg).m^3/s   |Meridional Diffusive Flux of poc
+ 293 |DFrITr10| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of poc (Implicit part)
+ 294 |TRAC11  | 29 |SM P    MR      |(kg/kg)         |Mass-Weighted oxy
+ 295 |UTRAC11 | 29 |UU   296MR      |(kg/kg).m/s     |Zonal Mass-Weighted Transp of oxy
+ 296 |VTRAC11 | 29 |VV   295MR      |(kg/kg).m/s     |Merid Mass-Weighted Transp of oxy
+ 297 |WTRAC11 | 29 |WM      MR      |(kg/kg).m/s     |Vert  Mass-Weighted Transp of oxy
+ 298 |ADVrTr11| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical   Advective Flux of oxy
+ 299 |ADVxTr11| 29 |UU   300MR      |(kg/kg).m^3/s   |Zonal      Advective Flux of oxy
+------------------------------------------------------------------------
+ Num |<-Name->|Levs|<-parsing code->|<--  Units   -->|<- Tile (max=80c) 
+------------------------------------------------------------------------
+ 300 |ADVyTr11| 29 |VV   299MR      |(kg/kg).m^3/s   |Meridional Advective Flux of oxy
+ 301 |DFrETr11| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of oxy (Explicit part)
+ 302 |DIFxTr11| 29 |UU   303MR      |(kg/kg).m^3/s   |Zonal      Diffusive Flux of oxy
+ 303 |DIFyTr11| 29 |VV   302MR      |(kg/kg).m^3/s   |Meridional Diffusive Flux of oxy
+ 304 |DFrITr11| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of oxy (Implicit part)
+ 305 |TRAC12  | 29 |SM P    MR      |(kg/kg)         |Mass-Weighted alk
+ 306 |UTRAC12 | 29 |UU   307MR      |(kg/kg).m/s     |Zonal Mass-Weighted Transp of alk
+ 307 |VTRAC12 | 29 |VV   306MR      |(kg/kg).m/s     |Merid Mass-Weighted Transp of alk
+ 308 |WTRAC12 | 29 |WM      MR      |(kg/kg).m/s     |Vert  Mass-Weighted Transp of alk
+ 309 |ADVrTr12| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical   Advective Flux of alk
+ 310 |ADVxTr12| 29 |UU   311MR      |(kg/kg).m^3/s   |Zonal      Advective Flux of alk
+ 311 |ADVyTr12| 29 |VV   310MR      |(kg/kg).m^3/s   |Meridional Advective Flux of alk
+ 312 |DFrETr12| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of alk (Explicit part)
+ 313 |DIFxTr12| 29 |UU   314MR      |(kg/kg).m^3/s   |Zonal      Diffusive Flux of alk
+ 314 |DIFyTr12| 29 |VV   313MR      |(kg/kg).m^3/s   |Meridional Diffusive Flux of alk
+ 315 |DFrITr12| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of alk (Implicit part)
+ 316 |TRAC13  | 29 |SM P    MR      |(kg/kg)         |Mass-Weighted Tracer 13
+ 317 |UTRAC13 | 29 |UU   318MR      |(kg/kg).m/s     |Zonal Mass-Weighted Transp of Tracer 13
+ 318 |VTRAC13 | 29 |VV   317MR      |(kg/kg).m/s     |Merid Mass-Weighted Transp of Tracer 13
+ 319 |WTRAC13 | 29 |WM      MR      |(kg/kg).m/s     |Vert  Mass-Weighted Transp of Tracer 13
+ 320 |ADVrTr13| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical   Advective Flux of Tracer 13
+ 321 |ADVxTr13| 29 |UU   322MR      |(kg/kg).m^3/s   |Zonal      Advective Flux of Tracer 13
+ 322 |ADVyTr13| 29 |VV   321MR      |(kg/kg).m^3/s   |Meridional Advective Flux of Tracer 13
+ 323 |DFrETr13| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of Tracer 13 (Explicit part)
+ 324 |DIFxTr13| 29 |UU   325MR      |(kg/kg).m^3/s   |Zonal      Diffusive Flux of Tracer 13
+ 325 |DIFyTr13| 29 |VV   324MR      |(kg/kg).m^3/s   |Meridional Diffusive Flux of Tracer 13
+ 326 |DFrITr13| 29 |WM      LR      |(kg/kg).m^3/s   |Vertical Diffusive Flux of Tracer 13 (Implicit part)
+ 327 |DICBIOA | 29 |SM P    MR      |mol/m3/sec      |Biological Productivity (mol/m3/s)
+ 328 |DICCARB | 29 |SM P    MR      |mol eq/m3/sec   |Carbonate chg-biol prod and remin (mol eq/m3/s)
+ 329 |DICTFLX |  1 |SM P    L1      |mol/m3/sec      |Tendency of DIC due to air-sea exch (mol/m3/s)
+ 330 |DICOFLX |  1 |SM P    L1      |mol/m3/sec      |Tendency of O2 due to air-sea exch (mol/m3/s)
+ 331 |DICCFLX |  1 |SM P    L1      |mol/m2/sec      |Flux of CO2 - air-sea exch (mol/m2/s)
+ 332 |DICPCO2 |  1 |SM P    M1      |atm             |Partial Pressure of CO2 (atm)
+ 333 |DICPHAV |  1 |SM P    M1      |dimensionless   |pH (dimensionless)
+------------------------------------------------------------------------
+ Num |<-Name->|Levs|<-parsing code->|<--  Units   -->|<- Tile (max=80c) 
+------------------------------------------------------------------------

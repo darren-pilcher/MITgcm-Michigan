@@ -1,0 +1,13 @@
+# Packages
+ &PACKAGES
+ useGMRedi=.FALSE.,
+ usePTRACERS=.TRUE.,
+ useGCHEM=.TRUE.,
+ useMNC=.TRUE.,
+ useDiagnostics=.FALSE.,
+ useKPP=.TRUE.,
+ useRBCS=.FALSE.,
+ useMY82=.FALSE.,
+ useGGL90=.FALSE.,
+ useLAKEICE=.TRUE.,
+ &
